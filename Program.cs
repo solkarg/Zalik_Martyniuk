@@ -17,6 +17,17 @@ namespace ConsoleAppBook
             if (price < 0) price = 0.0;
             else price = _price;
         }
+        public string Title
+        {
+            get { return title; }
+            set { title = value; }
+        }
+
+        public string Author
+        {
+            get { return author; }
+            set { author = value; }
+        }
     }
 
     class Program

@@ -28,9 +28,20 @@ namespace ConsoleAppBook
             get { return author; }
             set { author = value; }
         }
+<<<<<<< HEAD
         public void Print()
         {
             Console.WriteLine("title = {0}, author = {1}, price = {2:f2}", title, author, price);
+=======
+        public double Price
+        {
+            get { return price; }
+            set
+            {
+                if (price < 0) price = 0.0;
+                else price = value;
+            }
+>>>>>>> branch1_Martyniuk
         }
     }
 

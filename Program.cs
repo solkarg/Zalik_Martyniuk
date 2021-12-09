@@ -28,6 +28,10 @@ namespace ConsoleAppBook
             get { return author; }
             set { author = value; }
         }
+        public void Print()
+        {
+            Console.WriteLine("title = {0}, author = {1}, price = {2:f2}", title, author, price);
+        }
     }
 
     class Program

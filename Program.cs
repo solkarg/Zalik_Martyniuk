@@ -28,6 +28,15 @@ namespace ConsoleAppBook
             get { return author; }
             set { author = value; }
         }
+        public double Price
+        {
+            get { return price; }
+            set
+            {
+                if (price < 0) price = 0.0;
+                else price = value;
+            }
+        }
     }
 
     class Program
